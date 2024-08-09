@@ -58,7 +58,7 @@ export const formatDescription = (
   replacement: Maybe<string> = NO_DESCRIPTION_TEXT,
 ): MDXString | string => {
   if (typeof type !== "object" || type === null) {
-    return `${MARKDOWN_EOP}${escapeMDX(replacement)}`;
+    return `${MARKDOWN_EOP}${escapeMDX(replacement)} test`;
   }
 
   const description =
